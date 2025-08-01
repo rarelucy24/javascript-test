@@ -1,0 +1,17 @@
+{
+  "name": "javascript-fundamentals-course",
+  "version": "1.0.0",
+  "description": "A comprehensive JavaScript learning course with hands-on exercises and automated testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test-runner.js",
+    "test:all": "node tests/test-runner.js --all",
+    "test:exercise": "node tests/test-runner.js --exercise"
+  },
+  "keywords": ["javascript", "learning", "education", "exercises", "testing"],
+  "author": "JavaScript Instructor",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
