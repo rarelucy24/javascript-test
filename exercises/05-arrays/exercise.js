@@ -7,6 +7,7 @@
  * @returns {number[]} Array containing [1, 2, 3, 4, 5]
  */
 function createNumberArray() {
+  return[1,2,3,4,5];
   // TODO: Create and return an array with numbers 1 through 5
   
 }
@@ -20,6 +21,7 @@ function createNumberArray() {
  * @returns {any[]} New array with element added to the end
  */
 function addToEnd(array, element) {
+  return[...array,element];
   // TODO: Create a new array with the element added to the end
   // Hint: Use spread operator [...array, element] or concat()
   
@@ -33,6 +35,7 @@ function addToEnd(array, element) {
  * @returns {any} The first element of the array
  */
 function removeFromStart(array) {
+  return array[0];
   // TODO: Return the first element of the array
   // Hint: Use array[0] or array indexing
   
@@ -45,6 +48,8 @@ function removeFromStart(array) {
  * @returns {number} The largest number in the array
  */
 function findLargest(numbers) {
+  return Math.max(...numbers);
+ 
   // TODO: Find and return the largest number
   // Hint: Use Math.max() with spread operator or a loop
   
@@ -57,6 +62,10 @@ function findLargest(numbers) {
  * @returns {number[]} New array containing only even numbers
  */
 function filterEvenNumbers(numbers) {
+  return filterEvenNumbers(numbers);
+  {
+    return numbers.filter(num => num % 2 ==0)
+  }
   // TODO: Filter the array to only include even numbers
   // Hint: Use filter() method and modulo operator (%)
   
@@ -69,6 +78,8 @@ function filterEvenNumbers(numbers) {
  * @returns {number} The sum of all numbers
  */
 function sumArray(numbers) {
+  
+  return numbers.reduce((sum,num) => sum + num, 0)
   // TODO: Calculate the sum of all numbers in the array
   // Hint: Use reduce() method or a loop
   
